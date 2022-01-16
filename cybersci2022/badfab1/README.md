@@ -21,7 +21,7 @@ After logging into the ElasticSearch page I checked the dashboard to get an over
 
 ![dashboard](dashboard.png)
 
-Looking at the 2000 login requests from a single IP address and the amount of `HTTP401`s it's obvious that the hackers managed to bruteforce their way in.
+Looking at the 2000 login requests from a single IP address and the amount of `HTTP401`s it's obvious that the attackers managed to bruteforce their way in.
 
 To find out which password was correct I navigated to the discovery page. There I put in a search for all requests to `/login` that returned `HTTP200`.
  

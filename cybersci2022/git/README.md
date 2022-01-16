@@ -28,7 +28,7 @@ Discovered open port 3000/tcp on 10.0.1.44
 ...
 ```
 
-Clearly a git web interface is running on `http://10.0.1.44:3000`.
+Clearly a git web interface was running on `http://10.0.1.44:3000`.
 
 Navigating to the web interface I found a user called `fab_admin` in the explore tab.
 

@@ -110,9 +110,7 @@ Table: auth
 
 And this is where I ran out of time :( However I continued to solve the challenge after the timer was up.
 
-I created a python script to try every auth token and find which was correct.
-
-[authcheck.py](authcheck.py)
+I created a python script to try every auth token and find which was correct. [authcheck.py](authcheck.py)
 
 ```
 $ python3 authcheck.py
