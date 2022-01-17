@@ -1,5 +1,7 @@
 # CyberSci Regionals 2022
 
+[ctfd.hijacksparrow.ca](https://ctfd.hijacksparrow.ca/scoreboard)
+
 Team Baple (part of [Maple Bacon](https://ubcctf.github.io/)), 2nd place.
 
 ## mobile
