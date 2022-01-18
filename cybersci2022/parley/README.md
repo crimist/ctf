@@ -10,7 +10,7 @@ Target: The name of the database backup file in the cloud storage.
 
 ## Walkthrough
 
-The first was extracting the APK. I used a popular tool called `apktool` to extract it.
+The first step was to extract the APK. I used a popular tool called `apktool` to extract it.
 
 ```sh
 $ apktool d HijackSparrow.apk
