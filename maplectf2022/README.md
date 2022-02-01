@@ -2,7 +2,7 @@
 
 [ctf.maplebacon.org/](https://ctf.maplebacon.org/scoreboard)
 
-This CTF was begginer friendly with *a lot* of challenges. I've chosen some challenges with different skillsets.
+This CTF was beginner friendly with *a lot* of challenges. I've chosen some challenges with different skill sets.
 
 ## pwn
 * [wetuwn addwess](./wetuwn_addwess/README.md)

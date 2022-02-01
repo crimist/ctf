@@ -2,7 +2,7 @@
 
 ## Challenge
 
-All 3 pyjails allow for exeution of python on a remote server but with restricted words.
+All 3 pyjails allow for execution of python on a remote server but with restricted words.
 
 ```py
 userinput = input('>> ')

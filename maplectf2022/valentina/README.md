@@ -8,7 +8,7 @@ The website admin checks her reviews with secrets in her cookies.
 
 ## Walkthrough 1
 
-Given that this project was deep into npm dependency hell the first obvious step was to check if any libraries had vulnerabilies.
+Given that this project was deep into npm dependency hell the first obvious step was to check if any libraries had vulnerabilities.
 
 ```
 $ npm audit
@@ -23,7 +23,7 @@ Prototype Pollution in lodash - https://github.com/advisories/GHSA-fvqr-27wr-82f
 ...
 ```
 
-Digging into these vulnerabilties and the source code unveiled that [CVE-2018-3721](https://snyk.io/test/npm/lodash/4.17.4#npm:lodash:20180130), a [prototype pollution](https://www.whitesourcesoftware.com/resources/blog/prototype-pollution-vulnerabilities/) vulnerability, was likely the target.
+Digging into these vulnerabilities and the source code unveiled that [CVE-2018-3721](https://snyk.io/test/npm/lodash/4.17.4#npm:lodash:20180130), a [prototype pollution](https://www.whitesourcesoftware.com/resources/blog/prototype-pollution-vulnerabilities/) vulnerability, was likely the target.
 
 > The vulnerable functions are 'defaultsDeep', 'merge', and 'mergeWith' which allow a malicious user to modify the prototype of Object via __proto__ causing the addition or modification of an existing property that will exist on all objects.
 
@@ -66,7 +66,7 @@ Reading the source code revealed that we could control the `whiteList` variable 
 }
 ```
 
-To retreieve the cookies I addded the `script` tag to the whitelist and than had the admin visit the review.
+To retrieve the cookies I added the `script` tag to the whitelist and than had the admin visit the review.
 
 ```py
 import requests
