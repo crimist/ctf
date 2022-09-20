@@ -107,3 +107,17 @@ Pretty interesting "feature" for a cli mail client...
 ## Solve
 
 `flag{5up3r_53cr3t_4nd_c001_f14g_g035_h3r3}`
+
+## Bonus
+
+My teammate [Vie](https://github.com/jamiepoli) pointed out that in Varnish you can bypass the VCL and as such the need to smuggle a request by simply capitalizing characters in `admin`.
+
+```sh
+$ curl https://localhost:4000/admin/alert -k -X POST
+Access Denied%
+
+$ curl https://localhost:4000/Admin/alert -k -X POST
+$ # works due to the capital A
+```
+
+lol
