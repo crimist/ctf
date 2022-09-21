@@ -55,7 +55,7 @@ Ensure anti-virus up to date on HQ PC, some of the git software might be out of 
 
 Sounds like the repo is cloned often and that the exploit has something to do with out of date git software on the system cloning the repo.
 
-Inspecting the repo further I noticed a couple of things
+Inspecting the repo further I noticed a couple of things.
 
 * We have write access but not for existing files, only new ones
 * The only file in the repo `./chips_list.csv` is stored using git lfs

@@ -41,9 +41,7 @@ res/values/strings.xml:    <string name="firebase_database_URL">https://galleych
 ...
 ```
 
-Now that I'd determined the databases address it was time to inspect it.
-
-An easy way to check if a firebases permissions are misconfigured to allow read access is to `GET /.json`, if you get anything back than there's permissions issues and you can inspect further with other tooling.
+Now that I'd determined the databases address it was time to inspect it. An easy way to check if firebase permissions are misconfigured to allow read access is to `GET /.json`, if you get anything back than there're permissions issues and you can inspect further with other tooling.
 
 ```sh
 $ curl https://galleychat-default-rtdb.firebaseio.com/.json | jq

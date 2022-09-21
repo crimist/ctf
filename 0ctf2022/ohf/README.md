@@ -10,7 +10,7 @@ This challenge contained a link to a webapp with a console and CSS input field.
 
 ![landing.png](landing.png)
 
-After digging into the console system to no avail I set my sites on the CSS input. It made a GET request to `/less?data=<base64 encoded CSS>` and then passed the response back into the pages stylesheet. I recongized this as likely a [less CSS parser](https://lesscss.org/) which has [numerous issues](https://www.softwaresecured.com/exploiting-less-js-to-achieve-rce/) depending on how it's implemented.
+After digging into the console system to no avail I set my sites on the CSS input. It made a GET request to `/less?data=<base64 encoded CSS>` and then passed the response back into the pages stylesheet. I recognized this as likely a [less CSS parser](https://lesscss.org/) which has [numerous issues](https://www.softwaresecured.com/exploiting-less-js-to-achieve-rce/) depending on how it's implemented.
 
 I leaked the challenge source using local file disclosure which only revealed that the CSS was indeed being parsed by less.
 

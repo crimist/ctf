@@ -2,7 +2,7 @@
 
 ## Challenge
 
-Extract the flag from the given binary and image.
+> Extract the flag from the given binary and image.
 
 ## Walkthrough
 

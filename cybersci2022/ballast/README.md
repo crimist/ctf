@@ -29,7 +29,7 @@ Discovered open port 3002/tcp on 10.0.1.11
 ...
 ```
 
-There were 2 HTTP servers running on the machine. Visting each server showed that `:3002` was running a different challenge. `:31968` was what I nedeed to exploit.
+There were 2 HTTP servers running on the machine. Visiting each server showed that `:3002` was running a different challenge. `:31968` was what I needed to exploit.
 
 Navigating to `:31968` provided a convenient swagger definitions page behind a warning page due to the self signed certificate.
 

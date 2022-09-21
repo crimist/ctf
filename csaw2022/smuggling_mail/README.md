@@ -46,7 +46,7 @@ TOKEN generated as such.
 sed -i "s/TOKEN/$(base64 < /dev/urandom | fold -w 64 | tr '/+' '_-' | head -n 1)/" /etc/varnish/varnish.vcl
 ```
 
-The server itself doesn't have much surface area - the only user controlled input is on /admin/alert and we can only acess that if we successfully guess 64 random bytes, unlikely. Checking the package.json revealed that expressJS was up to date so clearly the exploit wasn't there. This prompted me to look into the varnish server especially with the challenge being clearly hinted as a request *smuggling* challenge.
+The server itself doesn't have much surface area - the only user controlled input is on /admin/alert and we can only access that if we successfully guess 64 random bytes, unlikely. Checking the package.json revealed that expressJS was up to date so clearly the exploit wasn't there. This prompted me to look into the varnish server especially with the challenge being clearly hinted as a request *smuggling* challenge.
 
 The Dockerfile revealed the varnish version was clearly out of date:
 

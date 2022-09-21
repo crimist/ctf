@@ -2,7 +2,7 @@
 
 ## Challenge
 
-Bypass the admin login to read the flag from the database.
+> Bypass the admin login to read the flag from the database.
 
 ## Walkthrough
 

@@ -2,7 +2,7 @@
 
 ## Challenge
 
-Hijack the retaddr using a stack overflow.
+> Hijack the retaddr using a stack overflow.
 
 ## Walkthrough
 

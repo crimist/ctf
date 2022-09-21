@@ -2,9 +2,9 @@
 
 ## Challenge
 
-The flag is hidden somewhere in a Ubuntu VM.
+> The flag is hidden somewhere in a Ubuntu VM.
 
-## Walkthrough & Flag
+## Walkthrough
 
 Booting the VM quickly revealed the issue, shortly after booting the vm would become unresponsive as if overloaded. To investigate I added an Ubuntu CD image to the VM and inspected the VMs disk.
 

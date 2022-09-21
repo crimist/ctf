@@ -4,7 +4,7 @@ Valentina contained 2 challenges sharing a vulnerability but with different appl
 
 ## Challenge 1
 
-The website admin checks her reviews with secrets in her cookies.
+> The website admin checks her reviews with secrets in her cookies.
 
 ## Walkthrough 1
 
@@ -85,7 +85,7 @@ print("http://localhost:8999/view_review?review_id=" + id) # submit this to /rep
 
 ## Challenge 2
 
-`flag.txt` exists in the projects directory.
+> `flag.txt` exists in the projects directory.
 
 ## Walkthrough 2
 
