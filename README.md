@@ -4,6 +4,7 @@ A collection of my CTF writeups.
 
 ## 2022
 
+* [CyberSci Regionals 2022](cybersci_regionals2022/README.md)
 * [SekaiCTF 2022](sekaictf2022/README.md)
 * [0CTF 2022](0ctf2022/README.md)
 * [CSAW 2022](csaw2022/README.md)
