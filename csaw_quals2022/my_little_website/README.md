@@ -82,4 +82,4 @@ Modifying the POC slightly I was able to execute nodejs and read the flag into t
 
 ## Solve
 
-`CTF{pdf_c0nt1nu3s_70_5uCK}`
+`CTF{pdf_c0nt1nu3s_70_5uCK}` (author spitting facts)
