@@ -50,8 +50,8 @@ Now that I had a way to pollute arbitrary objects, I just needed to find a way t
 ```js
 FilterXSS.prototype.process = function (html) {
 	// ...
-	var options = me.options; 			// not set in valentina
-	var whiteList = options.whiteList;  // looks like we can control this
+	var options = me.options;
+	var whiteList = options.whiteList; // This isn't set!
 	// ...
 ```
 

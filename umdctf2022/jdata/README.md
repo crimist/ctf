@@ -44,9 +44,8 @@ pwndbg> info functions
 0x000000000000176f  x
 0x000000000000177e  y
 0x000000000000178d  z
-pwndbg> disassemble hehe
+pwndbg> disassemble hehe # read this bottom up
 ...
-# Read from bottom to top
    0x00000000000015c2 <+313>:   call   0x179c <brack> # umdctf{
 ...
    0x00000000000015ce <+325>:   call   0x1661 <f> # umdctf

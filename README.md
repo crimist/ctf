@@ -2,6 +2,8 @@
 
 A collection of my CTF writeups.
 
+I started playing CTFs in early 2022 with Maple Bacon and have mostly been working on web. I'm currently trying to work on my rev skills :)
+
 ## 2022
 
 * [CSAW Finals](csaw_finals2022/README.md)
