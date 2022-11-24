@@ -6,5 +6,5 @@ Actually got to attend this one in person and see New York! Pretty cool experien
 
 ## web
 
-* [Homework me](./homeworkme/README.md)
+* [Homework Me](./homeworkme/README.md)
 * [DOOM PDF](./doompdf/README.md)
