@@ -4,6 +4,11 @@ A collection of my CTF writeups.
 
 I started playing CTFs in early 2022 with Maple Bacon and have mostly been working on web. I'm currently trying to work on my rev skills :)
 
+## 2023
+
+* [SaplingCTF](sapling2023/README.md)
+* [Maple Bacon 1337 challenges](mb_challs2023/README.md)
+
 ## 2022
 
 * [CSAW Finals](csaw_finals2022/README.md)
