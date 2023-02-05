@@ -38,7 +38,7 @@ pop rbp
 ret
 ```
 
-Thanks to my teammate Ayna who was looking over my shoulder and pointed out I was using `esp`, forgot `rdp`, and introduced me to the `leave` x86 instruction lol. It had been a long day of travel to New York.
+Thanks to my teammate Ayna who was looking over my shoulder and pointed out I was using `esp`, forgot `rbp`, and introduced me to the `leave` x86 instruction lol. It had been a long day of travel to New York.
 
 ```asm
 leave
