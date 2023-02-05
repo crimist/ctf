@@ -10,7 +10,7 @@ Connect with nc 1337.maplebacon.org 1337 and provide the payload you designed.
 
 ## Walkthrough
 
-We are given a binary in you are stuck in the function `run` with the ability to run arbitrary shellcode. The goal is to escape the `run` function and return to `main`.
+We are given a binary in which you are stuck in the function `run` with the ability to run arbitrary shellcode. The goal is to escape the `run` function and return to `main`.
 
 ```c
 int main() {
