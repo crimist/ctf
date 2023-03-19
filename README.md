@@ -1,11 +1,12 @@
 # CTF
 
-A collection of my CTF writeups.
+A collection of my CTF write-ups.
 
-I started playing CTFs in early 2022 with Maple Bacon and have mostly been working on web. I'm currently trying to work on my rev skills :)
+I started playing CTFs in early 2022 with Maple Bacon and have focused mostly on web. I'm aiming to improve my rev and pwn skills though!
 
 ## 2023
 
+* [KalmarCTF](kalmar2023/README.md)
 * [SaplingCTF](sapling2023/README.md)
 * [Maple Bacon 1337 challenges](mb_challs2023/README.md)
 
