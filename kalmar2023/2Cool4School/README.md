@@ -59,13 +59,11 @@ Looking at these endpoints we figured that the goal would be to `PUT` to `/api/g
 
 We spent a lot of time wrestling with the application before Angus found a XML injection vulnerability in the SSO.
 
-In essence, upon successfully authenticating with the SSO you are generated a unique token that is stored in a database.
-You are then redirected to `http://grade.chal-kalmarc.tf/login?ticket=<TOKEN>`, which takes your token and fetches `http://sso.chal-kalmarc.tf/validate?ticket=<TOKEN>`. The SSO checks if that ticket is a successful login ticket and returns the user information associated with it. The grade service then sets your cookie for that user.
+In essence, upon successfully authenticating with the SSO you are generated a unique ticket that is stored in a database. The other services (grade in this case) can call the SSO's `/validate?ticket=` endpoint to check whether the user successfully logged in via the SSO.
 
-* `://sso/login` success
-* `sso` sets token in database
-* redirects to `://grade/login?token=<token>`
-* `grade` fetches `://sso/validate` and sets cookie if successful.
+* Successful login at `://sso/login`
+* SSO service sets `ticketFoo` in database. Redirects to `://grade/login?ticket=ticketFoo`.
+* Grade service fetches `://sso/validate?ticket=ticketFoo` and sets cookie if SSO returns success.
 
 Successful response from `/validate`:
 
@@ -79,7 +77,7 @@ Failure response from `/validate`:
 
 ```xml
 <response>
-    <authenticationFailure>Failed for (token)</authenticationFailure>
+    <authenticationFailure>Failed for ticketFoo</authenticationFailure>
 </response>
 ```
 
