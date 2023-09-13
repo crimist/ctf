@@ -14,5 +14,5 @@ Ever year, Maple Bacon creates a beginner challenge for each category. If you so
 ## misc
 * [The Return of 110](./misc.md)
 
-## misc
+## crypto
 * [The Matrix Exchange](./crypto.md)
