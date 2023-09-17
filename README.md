@@ -4,7 +4,7 @@ A collection of my CTF write-ups.
 
 I started playing CTFs in early 2022 with Maple Bacon and have focused mostly on web but like to explore other categories as well.
 
-Outside of CTF's do bug bounties and work in security engineering.
+Outside of CTF's I do bug bounties and work in security engineering.
 
 ## 2023
 
