@@ -1,3 +1,7 @@
+Migrated to my Quartz instance: https://read.crim.ist/Legacy-CTF-Writeups/
+
+---
+
 # CTF
 
 A collection of my CTF write-ups.
